@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>DrinkGame</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/impact.css" rel="stylesheet"> <!-- necessario porque a fonte nao existe no android -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/newGame.css" rel="stylesheet">
+    <link href="css/rodada.css" rel="stylesheet">
+    <link href="css/resultado.css" rel="stylesheet">
+    <link href="css/info.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+
+    <!-- baralhos -->
+    <script src="js/baralhos/DrinkGame.js"></script>
+
+    <!-- controllers -->
+    <script src="js/config.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/newGameCtrl.js"></script>
+    <script src="js/rodadaCtrl.js"></script>
+    <script src="js/resultadoCtrl.js"></script>
+    <script src="js/infoCtrl.js"></script>
+
+    <script>
+    function ajustaHeightHtml() {
+      // Gambiarra pra nao bugar quando abrir o keyboard...
+      var w = window, d = document, e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        y = w.innerHeight || e.clientHeight|| g.clientHeight;
+      document.body.style.minHeight = y + "px";
+    }
+    </script>
+  </head>
+  <body ng-app="starter" onload="ajustaHeightHtml()">
+    <div ng-view=""></div>
+  </body>
+</html>

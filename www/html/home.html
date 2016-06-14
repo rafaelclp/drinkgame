@@ -1,0 +1,37 @@
+<div id="home">
+  <div class="vmargin-5"></div>
+
+  <div class="logo centered"></div>
+
+  <div class="texto centered">
+    <div class="vmargin-60"></div>
+    <div class="escolha-o-baralho"></div>
+  </div>
+
+  <!-- BARALHOS -->
+  <div class="baralhos centered">
+    <div class="vmargin-10"></div>
+    <div class="baralho">
+      <ion-slide-box on-slide-changed="selecionarBaralho($index)" show-pager="false" does-continue="true">
+        <ion-slide ng-repeat="baralho in baralhos">
+          <a href="#/newGame"><img ng-src="{{baralho.diretorioImagens}}baralho.png" /></a>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </div>
+
+  <!-- BOTOES '?' E 'i' -->
+  <div class="info centered">
+    <div class="como-jogar">
+      <a href="#/como-jogar" class="icon">
+        <img src="img/home/como-jogar.png" />
+      </a>
+    </div>
+
+    <div class="sobre">
+      <a href="#/sobre" class="icon">
+        <img src="img/home/sobre.png" />
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+/* Home */
+
+#home {
+  height: 100%;
+}
+
+#home > div.logo {
+  height: 18%;
+  background: url(../img/logo.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#home > div.texto {
+  height: 18%;
+}
+
+#home > div.texto > div.escolha-o-baralho {
+  height: 40%;
+  background: url(../img/home/escolha-o-baralho.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#home > div.baralhos {
+  width: 100%;
+  height: 51%;
+}
+
+#home > div.baralhos > div.baralho {
+  text-align: center;
+  height: 90%;
+}
+
+#home > div.baralhos > div.baralho > * {
+  height: 100%;
+}
+
+#home > div.baralhos > div.baralho img {
+  height: 95%;
+}
+
+#home > div.info {
+  width: 95%;
+  height: 8%;
+}
+
+#home > div.info > div.como-jogar {
+  height: 80%;
+  width: 50%;
+  float: left;
+}
+
+#home > div.info > div.sobre {
+  height: 80%;
+  text-align: right;
+}
+
+#home > div.info > div.como-jogar > a.icon > img {
+  height: 100%;
+}
+
+#home > div.info > div.sobre > a.icon > img {
+  height: 100%;
+}

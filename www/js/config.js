@@ -1,0 +1,8 @@
+var RODADAS_MAX = 15;
+var RODADAS_MIN = 3;
+var RODADAS_INICIAL = 8;
+var PONTOS_INICIAL = 0;
+var JOGADORES_MAX = 5;
+var JOGADORES_MIN = 2;
+var JOGADORES_INICIAL = [{nome: "Jogador 1", pontos: PONTOS_INICIAL}, {nome: "Jogador 2", pontos: PONTOS_INICIAL}];
+var TEMPO_ATIVAR_BOTOES = 3000;

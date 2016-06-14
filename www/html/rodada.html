@@ -1,0 +1,20 @@
+<div id="rodada">
+  <div class="encerrar-jogo centered" ng-click="encerrar()">Encerrar Jogo</div>
+  <div class="vmargin-8"></div>
+
+  <div class="rodada centered">Rodada {{rodadaAtual}} de {{rodadas}}</div>
+
+  <div class="jogador">{{jogadores[jogador].nome}}</div>
+  <div class="vmargin-7"></div>
+
+  <div class="carta">
+    <img ng-src="{{baralho.diretorioImagens}}{{baralho.cartas[rodada]}}" /></a>
+  </div>
+  <div class="vmargin-3"></div>
+
+  <div class="botoes centered">
+    <div class="nao-cumpriu avancar" ng-class="{'ativo': botoesAtivos}" ng-click="somarPonto(0)"></div>
+    <div class="pontos">1 ponto</div>
+    <div class="cumpriu avancar" ng-class="{'ativo': botoesAtivos}" ng-click="somarPonto(1)"></div>
+  </div>
+</div>

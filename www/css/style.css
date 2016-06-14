@@ -1,0 +1,47 @@
+/* Main */
+
+html, body {
+  height: 100%;
+}
+
+body div[id] {
+  font-family: impact;
+  font-size: 18px;
+  color: #483016;
+  stext-shadow: 0px 0px 5px #fff;
+}
+
+body {
+  background: url(../img/bg.png) repeat;
+}
+
+div[ng-view] {
+  height: 100%;
+}
+
+div {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+div.centered {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Vertical spacing */
+
+div.vmargin-3 { height: 3%; }
+div.vmargin-5 { height: 5%; }
+div.vmargin-6 { height: 6%; }
+div.vmargin-7 { height: 7%; }
+div.vmargin-8 { height: 8%; }
+div.vmargin-10 { height: 10%; }
+div.vmargin-15 { height: 15%; }
+div.vmargin-20 { height: 20%; }
+div.vmargin-30 { height: 30%; }
+div.vmargin-50 { height: 50%; }
+div.vmargin-60 { height: 60%; }
+div.vmargin-70 { height: 70%; }

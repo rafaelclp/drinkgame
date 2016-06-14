@@ -1,0 +1,135 @@
+/* New Game */
+
+#newGame {
+  height: 100%;
+}
+
+#newGame * {
+  font-family: impact;
+  font-size: 20pt;
+  color: #D68D00;
+}
+
+/* JOGADORES */
+#newGame div.jogadores {
+  height: 60%;
+}
+
+#newGame div.jogador {
+  height: 18%;
+}
+
+#newGame div.jogador div.jogador-nome {
+  height: 70%;
+  width: 100%;
+}
+
+#newGame div.jogadores div.jogador-fundo {
+  height: 100%;
+  width: 70%;
+  float: left;
+  background: #463015;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#newGame div.jogadores div.jogador-fundo input {
+  width: 100%;
+  background: transparent;
+  border: 0px;
+  height: 100%;
+  padding-left: 5%;
+}
+
+#newGame div.jogadores div.jogador-fundo input[readonly] {
+  width: 100%;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#newGame div.jogadores div.jogador-remover {
+  height: 100%;
+  width: 85%;
+  background: url(../img/new-game/X_remover-jogador.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+#newGame div.jogadores div.jogador-adicionar div.jogador-fundo {
+  width: 85%;
+}
+
+/*#newGame div.jogadores div.jogador-adicionar {
+  background: url(/img/new-game/V_add-jogador.png) no-repeat;
+  background-size: contain;
+}*/
+
+/* RODADAS */
+#newGame div.rodadas {
+  height: 7%;
+  background: #463015;
+  display: table;
+}
+
+#newGame div.rodadas-linha {
+  display: table-row;
+}
+
+#newGame div.rodadas > * > * {
+  height: 100%;
+}
+
+#newGame div.rodadas div.menos-rodada {
+  display: table-cell;
+  background: url(../img/new-game/-.png) no-repeat;
+  background-size: contain;
+  width: 13%;
+}
+
+#newGame div.rodadas div.n-rodadas {
+  display: table-cell;
+  width: 55%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#newGame div.rodadas div.n-rodadas:after {
+  content: " Rodadas";
+}
+
+#newGame div.rodadas div.mais-rodada {
+  display: table-cell;
+  background: url(../img/new-game/+.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 13%;
+}
+
+/* BOTOES */
+#newGame div.botoes {
+  height: 17.5%;
+  width: 100%;
+}
+
+#newGame div.botoes div.voltar {
+  display: flex;
+  align-items: center;
+  height: 40%;
+  justify-content: center;
+  width: 70%;
+  background: #463015;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#newGame div.botoes div.iniciar-jogo {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  height: 40%;
+  justify-content: center;
+  width: 70%;
+  background: #463015;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}

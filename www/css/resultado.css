@@ -1,0 +1,82 @@
+#resultado {
+  height: 100%;
+}
+
+#resultado * {
+  font-family: impact;
+  font-size: 20pt;
+  color: #D68D00;
+}
+
+#resultado div.ranking {
+  width: 100%;
+  height: 9%;
+  text-align: center;
+  font-size: 36pt;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px #fff;
+  color: #483016;
+}
+
+#resultado div.jogadores {
+  height: 60%;
+}
+
+#resultado div.jogadores div.jogador {
+  height: 18%;
+}
+
+#resultado div.jogadores div.jogador-linha {
+  height: 70%;
+  width: 100%;
+}
+
+#resultado div.jogadores div.jogador-fundo input {
+  background: transparent;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#resultado div.jogadores input.posicao {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+#resultado div.jogadores input.nome {
+  width: 75%;
+  text-align: left;
+}
+
+#resultado div.jogadores div.jogador-fundo {
+  height: 100%;
+  width: 70%;
+  float: left;
+  background: #463015;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#resultado div.jogadores div.jogador-linha div.pontos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  color: #483016;
+  text-shadow: 0px 0px 20px #fff;
+  font-variant: small-caps;
+}
+
+#resultado div.finalizar {
+  height: 7%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #463015;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: auto;
+}

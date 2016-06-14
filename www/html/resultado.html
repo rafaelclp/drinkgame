@@ -1,0 +1,21 @@
+<div id="resultado">
+  <div class="vmargin-10"></div>
+  <div class="ranking centered">Ranking</div>
+  <div class="vmargin-5"></div>
+
+  <div class="jogadores">
+    <div class="jogador" ng-repeat="jogador in jogadores track by $index">
+      <div class="jogador-linha">
+        <div class="jogador-fundo">
+          <!-- gambiarra -->
+          <input type="text" class="posicao" readonly="true" value="{{$index+1}}º">
+          <input type="text" class="nome" readonly="true" value="{{jogador.nome}}">
+        </div>
+        <div class="pontos">{{jogador.pontos}} PTS</div>
+      </div>
+    </div>
+  </div>
+  <div class="finalizar" ng-click="finalizar()">
+    Finalizar
+  </div>
+</div>

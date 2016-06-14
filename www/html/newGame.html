@@ -1,0 +1,39 @@
+<div id="newGame">
+
+  <div class="vmargin-5"></div>
+
+  <div class="jogadores">
+    <div class="jogador" ng-repeat="jogador in jogadores track by $index">
+      <div class="jogador-nome">
+        <div class="jogador-fundo">
+          <input type="text" ng-model="jogador.nome">
+        </div>
+        <div class="jogador-remover" ng-show="podeRemoverJogador()" ng-click="removerJogador($index)"></div>
+      </div>
+    </div>
+
+    <div class="jogador jogador-adicionar" ng-show="podeAdicionarJogador()" ng-click="adicionarJogador()">
+      <div class="jogador-nome">
+        <div class="jogador-fundo">
+          <input type="text" value="Adicionar jogador" readonly="true">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rodadas centered">
+    <div class="rodadas-linha">
+      <div class="menos-rodada" ng-click="somaRodada(-1)"></div>
+      <div class="n-rodadas">{{rodadas}}</div>
+      <div class="mais-rodada" ng-click="somaRodada(1)"></div>
+    </div>
+  </div>
+
+  <div class="vmargin-7"></div>
+
+  <div class="botoes">
+    <div class="voltar" ng-click="voltar()">Voltar</div>
+    <div class="vmargin-20"></div>
+    <div class="iniciar-jogo" ng-click="iniciarJogo()">Iniciar Jogo</div>
+  </div>
+</div>

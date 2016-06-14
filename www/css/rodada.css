@@ -1,0 +1,89 @@
+#rodada {
+  height: 100%;
+}
+
+#rodada * {
+  font-family: impact;
+  font-size: 20pt;
+}
+
+#rodada div.botoes div.avancar:not(.ativo) {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+#rodada div.encerrar-jogo {
+  font-size: 25pt;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7.5%;
+  background: rgba(230,3,3,0.5);
+}
+
+#rodada div.rodada {
+  width: 100%;
+  height: 9%;
+  display: flex;
+  justify-content: center;
+  font-size: 32pt;
+  text-shadow: 0px 0px 40px #fff;
+}
+
+#rodada div.jogador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 7.5%;
+  color: #D68D00;
+  background: #463015;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#rodada div.carta {
+  text-align: center;
+  height: 42%;
+}
+#rodada div.carta img {
+  height: 100%;
+}
+
+/* 74% ate aqui (+5% vmargin) */
+
+#rodada div.botoes {
+  width: 100%;
+  height: 10%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABaCAYAAAB5XDy9AAAAGklEQVQYlWNgIA+4G4j+Z2JgYGAYJahFkAkA1D0CEsPjClgAAAAASUVORK5CYII=) repeat-x;
+  background-size: contain;
+  display: table;
+}
+
+#rodada div.botoes div.nao-cumpriu {
+  height: 100%;
+  width: 30%;
+  background: url(../img/new-game/X_remover-jogador.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: table-cell;
+}
+
+#rodada div.botoes div.pontos {
+  width: 40%;
+  color: #D68D00;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#rodada div.botoes div.cumpriu {
+  height: 100%;
+  width: 30%;
+  background: url(../img/new-game/V_add-jogador.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: table-cell;
+}

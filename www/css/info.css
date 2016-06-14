@@ -1,0 +1,36 @@
+#info {
+	height: 100%;
+}
+
+#info div.titulo-como-jogar {
+	height: 8%;
+	background: url(../img/how-to-play/como-jogar-titulo.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#info div.titulo-sobre {
+	height: 8%;
+	background: url(../img/info/info-titulo.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#info div.info {
+	height: 67%;
+	font-size: 14pt;
+	line-height: 17pt;
+}
+
+#info div.voltar {
+  height: 7%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #463015;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: auto;
+  color: #D68D00;
+}
